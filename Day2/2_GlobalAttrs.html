@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div {
+            height: 100px;
+            width: 100px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <p contenteditable="true" spellcheck="false">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum amet quo temporibus enim soluta ipsum, ea, ex modi laboriosam
+        expedita pariatur dolorem fugit, commodi numquam non ut doloremque. Dolorem, totam!
+    </p>
+
+    <p draggable="true" translate="no" hidden>
+        This is just a simple paragraph
+    </p>
+
+    <!-- <div dropzone="copy"></div> -->
+    <menu type="context" id="myMenu">
+        <menuitem label="Refresh"></menuitem>
+        <menuitem label="Search with Google"></menuitem>
+    </menu>
+
+    <div contextmenu="myMenu">
+        <h3>Right Click - Works only on Firefox</h3>
+    </div>
+
+    <input type="text" value="Some Data" data-validate="number">
+</body>
+
+</html>

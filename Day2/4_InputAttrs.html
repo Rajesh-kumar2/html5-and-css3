@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <form id="f1" action="http://www.google.com" method="get" autocomplete="on">
+        <input type="text" name="q" autofocus placeholder="Enter Search Text">
+        <br>
+        <input type="email" name="uremail" autocomplete="off" placeholder="Enter Email">
+        <br>
+        <input type="number" name="age" placeholder="Enter Age" step="10">
+        <br>
+        <input type="text" list="countryList" name="country" placeholder="Enter Country">
+        <br>
+        <input type="submit" value="Save 1">
+        <input type="submit" value="Save 2" formnovalidate formaction="http://www.microsoft.com" formtarget="_blank" formmethod="post">
+    </form>
+
+    <input form="f1" type="text" name="t1" placeholder="Outside">
+
+    <datalist id="countryList">
+        <option value="India"></option>
+        <option value="UK"></option>
+        <option value="US"></option>
+        <option value="Iran"></option>
+        <option value="UAE"></option>
+    </datalist>
+</body>
+</html>
