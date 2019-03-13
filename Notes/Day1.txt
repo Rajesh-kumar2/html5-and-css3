@@ -1,0 +1,33 @@
+HTML 5 New Tags
+
+article			aside
+audio			canvas
+datalist		details
+summary			embed
+figure			figcaption
+footer			header
+hgroup			keygen
+mark			meter
+nav			output
+progress		ruby
+rb			rt
+section			video
+source			time
+wbr
+
+------------------------------------------------------------
+New Input Types
+
+color			date		datetime
+datetime-local		email		file
+month			number		search
+range			tel		time
+url			week
+
+
+
+
+
+
+
+ 

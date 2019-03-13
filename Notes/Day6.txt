@@ -1,0 +1,67 @@
+Column Layout
+--------------------------------
+Backgrounds
+--------------------------------
+Border
+	border-radius
+	box-shadow
+	border-image
+--------------------------------
+color
+	rgba()
+	hsla()
+	gradient()
+
+---------------------------------
+Transformation
+
+Translate - Move
+	translate(x,y)
+	translateX(x)
+	translateY(y)
+	translateZ(z)
+	translate3d(x,y,z)
+
+Rotate - Rotating
+	rotate(angle)
+	rotate3d(angle)
+	rotateX(angle)
+	rotateY(angle)
+	rotateZ(angle)
+
+Scale - Resize
+	scale(x,y)
+	scale3d(x,y,z)
+	scaleX(x)
+	scaleY(y)
+	scaleZ(z)
+
+Skew - Slant Effect
+	skew(xAngle,yAngle)
+	skewX(xAngle)
+	skewY(yAngle)
+
+Matrix - Custom
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

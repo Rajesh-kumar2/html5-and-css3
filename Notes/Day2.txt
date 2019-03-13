@@ -1,0 +1,87 @@
+New Global Attributes
+
+accesskey
+class
+		contenteditable (true|false)
+		contextmenu (Removed) - Works only on Firefox
+		data-*
+dir (ltr|rtl|auto)
+		draggable (true|false)
+		dropzone (copy|move|link)	
+		hidden
+id
+lang
+		spellcheck (true|false)
+style
+tabindex
+title
+		translate (no|yes)
+
+--------------------------------------------------------------------------
+New Form Attributes
+
+	autocomplete (on|off)
+	novalidate
+
+--------------------------------------------------------------------------
+New Attributes for Input Types
+
+	autocomplete (on|off)
+	autofocus
+	form
+	formaction
+	formmethod
+	formnovalidate
+	formtarget
+	formenctype
+	height & width (type=image)
+	list
+	maxlength
+	placeholder
+	step
+
+Validation Attributes of HTML 5	
+
+	min
+	max
+	pattern (RegExp)
+	required
+	minlength
+
+--------------------------------------------------------------------
+
+	Video		mp4, webm, ogg
+
+	Audio		mp3, wav, ogg
+
+
+----------------------------------------------------------------------
+New HTML 5 APIs
+
+MediaElement API - https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement
+
+Form Validation - https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms/Form_validation
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

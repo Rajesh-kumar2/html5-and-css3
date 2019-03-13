@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #div1 {
+            height: 150px;
+            width: 150px;
+            background: yellow;
+        }
+
+        #div2 {
+            height: 75px;
+            width: 75px;
+            background: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="div1">
+        <div id="div2">
+            <button id="b1">Click</button>
+        </div>
+    </div>
+    <script>
+        window.addEventListener("DOMContentLoaded", function () {
+            document.getElementById("b1").addEventListener("click", function (e) {
+                alert("Button Clicked....");
+                e.stopPropagation();
+            })
+
+            document.getElementById("div2").addEventListener("click", function (e) {
+                alert("Div Two Clicked....");
+            })
+
+            document.getElementById("div1").addEventListener("click", function (e) {
+                alert("Div One Clicked....");
+            })
+
+            document.getElementById("b1").addEventListener("click", function (e) {
+                alert("Button Clicked....");
+            }, true);
+
+            document.getElementById("div2").addEventListener("click", function (e) {
+                alert("Div Two Clicked....");
+            }, true);
+
+            document.getElementById("div1").addEventListener("click", function (e) {
+                alert("Div One Clicked....");
+            }, true);
+        });
+    </script>
+</body>
+
+</html>
