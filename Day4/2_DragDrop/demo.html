@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #div1 {
+            background-color: red;
+            width: 75px;
+            height: 75px;
+        }
+
+        #div2 {
+            background-color: yellow;
+            width: 150px;
+            height: 150px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="div1" draggable="true" ondragstart="dragStart(event)"></div>
+    <div id="div2" ondragover="dragOver(event)" ondrop="drop(event)"></div>
+    <script src="../helperFns.js"></script>
+    <script>
+        function dragStart(e) {
+            e.dataTransfer.setData("TextId", e.target.getAttribute('id'));
+        }
+
+        function dragOver(e) {
+            e.preventDefault();
+        }
+
+        function drop(e) {
+            e.preventDefault();
+            var src = e.dataTransfer.getData("TextId");
+            e.target.appendChild($(src));
+        }
+    </script>
+
+    <!-- <button id="b1">Click Me</button>
+    <button onclick="ClickHandler(event)">Click Me</button>
+    
+    <script src="../helperFns.js"></script>
+    <script>
+        function ClickHandler(e) {
+            console.log(e);
+        }
+
+        $("b1").addEventListener("click", ClickHandler);
+    </script> -->
+</body>
+
+</html>

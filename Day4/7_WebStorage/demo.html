@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3>You have viewed this page
+        <span id="counter"></span> times. </h3>
+    <br />
+    <h3>In Current Session, You have viewed this page
+        <span id="scounter"></span> times. </h3>
+
+    <script src="../helperFns.js"></script>
+    <script>
+        if (!localStorage.getItem("lStore"))
+            localStorage.setItem('lStore', 0);
+
+        if (!sessionStorage.getItem("sStore"))
+            sessionStorage.setItem('sStore', 0);
+
+        localStorage.setItem('lStore', parseInt(localStorage.getItem("lStore")) + 1);
+        sessionStorage.setItem('sStore', parseInt(sessionStorage.getItem("sStore")) + 1);
+
+        $("counter").innerHTML = localStorage.getItem("lStore");
+        $("scounter").innerHTML = sessionStorage.getItem("sStore");
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <video id="video" width="340" height="280" autoplay="autoplay"></video>
+    <button id="snap">Snap Picture</button>
+    <canvas id="canvas" width="340" height="280"></canvas>
+
+    <script src="../helperFns.js"></script>
+    <script>
+        window.addEventListener("DOMContentLoaded", function () {
+            var canvas = $("canvas"),
+                context = canvas.getContext("2d"),
+                video = $("video"),
+                errCallback = function (err) {
+                    console.log("Video Capture Error...")
+                };
+
+            var constraints = window.constraints = {
+                audio: false,
+                video: true
+            };
+
+            navigator.mediaDevices.getUserMedia(constraints).then(function (stream) {
+                video.srcObject = stream;
+            }, errCallback);
+
+            $("snap").addEventListener("click", function () {
+                alert("Clicked..");
+                context.drawImage(video, 0, 0, 340, 280);
+            });
+        });
+    </script>
+</body>
+
+</html>
